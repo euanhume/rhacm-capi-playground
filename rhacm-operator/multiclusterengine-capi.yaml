@@ -4,7 +4,7 @@ metadata:
   name: multiclusterengine
   annotations:
     argocd.argoproj.io/sync-wave: "3"
-    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true,ServerSideApply=true
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   overrides:
     components:
