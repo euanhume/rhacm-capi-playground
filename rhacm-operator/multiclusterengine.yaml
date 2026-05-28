@@ -1,0 +1,14 @@
+apiVersion: multicluster.openshift.io/v1
+kind: MultiClusterEngine
+metadata:
+  name: multiclusterengine
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true,ServerSideApply=true
+spec:
+  overrides:
+    components:
+      - name: cluster-api-preview
+        enabled: true
+      - name: cluster-api-provider-aws-preview
+        enabled: true

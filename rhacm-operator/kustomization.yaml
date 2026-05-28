@@ -4,3 +4,5 @@ resources:
   - operatorgroup.yaml
   - subscription.yaml
   - multiclusterhub.yaml
+  - multiclusterengine.yaml
+  
